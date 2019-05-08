@@ -43,5 +43,7 @@ output include:
 4,Central Web-based Management
 https://pve.proxmox.com/wiki/Central_Web-based_Management
 
-
+5, update pve
+  Update a running Proxmox Virtual Environment 5.x to latest 5.4:
+  https://pve.proxmox.com/wiki/Downloads#Proxmox_Virtual_Environment_5.4_.28ISO_Image.29
 
