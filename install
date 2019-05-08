@@ -1,0 +1,47 @@
+1,download pve 5.4.1
+
+a)first read below
+Proxmox VE 5.4 released!
+https://forum.proxmox.com/threads/proxmox-ve-5-4-released.53297/
+
+b) please download from below link,because it have Sha256 checksum. it's very importment!
+Alternate ISO download:
+http://download.proxmox.com/iso/
+
+c) download proxmox-ve_5.4-1.iso
+http://download.proxmox.com/iso/proxmox-ve_5.4-1.iso
+
+d) or down by BitTorrent from below link:
+https://www.proxmox.com/en/downloads
+down file: Proxmox VE 5.4 ISO Installer (BitTorrent)
+filename: proxmox-ve_5.4-1.iso.torrent
+ cli: aria2c proxmox-ve_5.4-1.iso.torrent
+
+e) download checksum
+SHA256SUMS
+please SHA256SUMS to same direction with  proxmox-ve_5.4-1.iso
+cli: sha256sum -c SHA256SUMS 
+output include:
+   proxmox-ve_5.4-1.iso: 成功
+   
+   if check is not ok then download proxmox-ve_5.4-1.iso again!
+
+
+2, make usb_stick
+  1) see:
+     https://pve.proxmox.com/wiki/Install_from_USB_Stick
+     use:  dd if=proxmox-ve_5.4-1.iso of=/dev/XYZ bs=1M
+     in my computer: XYZ=sdb
+  2) other way:
+    use etcher flash proxmox-ve_5.4-1.iso to usb stick
+    please note: In arch and manjaro etcher is name:  balenaEtcher
+
+3, install
+ follow this page:
+     https://pve.proxmox.com/wiki/Quick_installation
+     
+4,Central Web-based Management
+https://pve.proxmox.com/wiki/Central_Web-based_Management
+
+
+
