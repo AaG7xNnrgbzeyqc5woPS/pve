@@ -14,6 +14,9 @@ for pve 5.4-3
    e0) clear browser cookie and cache
    e1) open browser and login pve server again
    e2) now, NO subscription notice at pve web GUI.
+   
+   # other way
+   sed -i 's/.*data.status.*/                if(false){/' proxmoxlib.js
  
    
 2) update pve
