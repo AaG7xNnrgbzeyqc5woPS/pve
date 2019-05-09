@@ -1,13 +1,20 @@
 for pve 5.4-3
 1, Kill subscription
    a) login pve server, 
-   b) edit file: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
-   c) find line:  if(data.status!=='Active'){
-   d) fixed this line to:  if(false){
-   e) save file
-   f) clear browser cookie and cache
-   g) open browser and login pve server again
-   h) now, NO subscription notice.
+   
+   b0) cd /usr/share/javascript/proxmox-widget-toolkit/
+   b1) cp proxmoxlib.js proxmoxlib_bak.js
+   
+   c0) edit file: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
+   c1) find line:  if(data.status!=='Active'){
+   c2) fixed this line to:  if(false){
+   
+   d) save file
+   
+   e0) clear browser cookie and cache
+   e1) open browser and login pve server again
+   e2) now, NO subscription notice at pve web GUI.
+ 
    
 2) update pve
 
