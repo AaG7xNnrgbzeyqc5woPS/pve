@@ -16,8 +16,8 @@ for pve 5.4-3
    e2) now, NO subscription notice at pve web GUI.
    
    # other way
-   sed -i 's/.*data.status.*/                if(false){/' proxmoxlib.js
- 
+   a) sed -i 's/.*data.status.*/                if(false){/' proxmoxlib.js
+   b) sed -i 's/.*data.status.*/ if(false){  \/\/ hack subscription notify!/' proxmoxlib.js
    
 2) update pve
 
