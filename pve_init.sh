@@ -1,3 +1,4 @@
+#!/bin/bash
 # filename: pve_init.sh
 # url: https://github.com/AaG7xNnrgbzeyqc5woPS/pve/blob/master/pve_init.sh
 # first pve init config shell script
