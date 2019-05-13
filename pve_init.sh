@@ -7,8 +7,8 @@
 # writed at 2019.5.13 
 
 #used shell:
-#wget https://github.com/AaG7xNnrgbzeyqc5woPS/pve/blob/master/pve_init.sh
-#chmod +x pve_init.sh && pve_init.sh
+#wget https://github.com/AaG7xNnrgbzeyqc5woPS/pve/pve_init.sh
+#chmod +x pve_init.sh && ./pve_init.sh
 
 echo "kill subsciption notify"
 cd /usr/share/javascript/proxmox-widget-toolkit/
