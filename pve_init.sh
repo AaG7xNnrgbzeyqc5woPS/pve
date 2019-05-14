@@ -62,12 +62,34 @@ function hack_pve_subscription()
   return 0
 }
 
-hack_pve_subscription
+function update_pve()
+{
+  echo "update pve"
+  
+  local list_path="/etc/apt/sources.list.d/"
+  local entlist="pve-enterprise.list"
+  local repolist="pve-install-repo.list"
+  local item_repo="deb http://download.proxmox.com/debian/pve stretch pve-no-subscription"
+  
+  cd list_path
+  if [ -e ${entlist} ]
+  then
+    rm -f ${entlist}  
+    echo item_repo > ${repolist}
+  
+    cd
+    
+    wget http://download.proxmox.com/debian/proxmox-ve-release-5.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg
+    chmod +r /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg # optional, if you have a changed default umask
+  fi
+  
+  return 0
+}
 
-echo "update pve"
-cd 
-rm -f /etc/apt/sources.list.d/pve-enterprise.list
-echo "deb http://download.proxmox.com/debian/pve stretch pve-no-subscription" > /etc/apt/sources.list.d/pve-install-repo.list
-wget http://download.proxmox.com/debian/proxmox-ve-release-5.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg
-chmod +r /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg # optional, if you have a changed default umask
-apt update && apt dist-upgrade -y
+function upgrade()
+{
+  apt update && apt dist-upgrade -y
+  return 0
+}
+
+hack_pve_subscription
