@@ -86,7 +86,7 @@ function update_pve()
     chmod +r /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg # optional, if you have a changed default umask
     echo "Download proxmox-ve-release-5.x.gpg that is gpg key! OK!"
   else
-    echo "file ${entlist} Do NOT exist, This script  is runned already! Don'd need run again."  
+    echo "File ${list_path}${entlist} Do NOT exist, This script '$0' is runned already! Don'd need run again."  
   fi
   
   cd
