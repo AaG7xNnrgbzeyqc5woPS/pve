@@ -64,26 +64,29 @@ function hack_pve_subscription()
 
 function update_pve()
 {
-  echo "update pve"
+  echo "-------update pve----------"
+  echo 
   
   local list_path="/etc/apt/sources.list.d/"
   local entlist="pve-enterprise.list"
   local repolist="pve-install-repo.list"
   local item_repo="deb http://download.proxmox.com/debian/pve stretch pve-no-subscription"
   
-  cd list_path
+  cd ${list_path}
   if [ -e ${entlist} ]
   then
     rm -f ${entlist}  
-    echo item_repo > ${repolist}  
+    echo "remove ${entlist}, path=${list_path} OK!"
+    
+    echo ${item_repo} > ${repolist} 
+    echo "Add item to ${repolist}, OK!"
     cd
     
     wget http://download.proxmox.com/debian/proxmox-ve-release-5.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg
     chmod +r /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg # optional, if you have a changed default umask
+    echo "Download proxmox-ve-release-5.x.gpg that is gpg key! OK!"
   else
-    cd
-    echo "file ${entlist} Do NOT exist, This script  is runned already! Don'd need run again." 
-    
+    echo "file ${entlist} Do NOT exist, This script  is runned already! Don'd need run again."  
   fi
   
   cd
@@ -92,7 +95,10 @@ function update_pve()
 
 function upgrade()
 {
+  echo "--------now update and upgrade --------"
+  echo ""
   apt update && apt dist-upgrade -y
+  
   return 0
 }
 
