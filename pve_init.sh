@@ -1,4 +1,5 @@
 #!/bin/bash
+#--------------------------------------------------
 # filename: pve_init.sh
 # url: https://github.com/AaG7xNnrgbzeyqc5woPS/pve/blob/master/pve_init.sh
 # first pve init config shell script
@@ -7,9 +8,20 @@
 # 2, update pve
 # writed at 2019.5.13 
 
-#used shell:
+#------------------------------
+#use shell:
 #wget https://raw.githubusercontent.com/AaG7xNnrgbzeyqc5woPS/pve/master/pve_init.sh
 #chmod +x pve_init.sh && ./pve_init.sh
+
+#Now login pve GUI console from firefox with url: https://pveurl:8006
+#if have subsription notify ,please  clear firefox cache buffer. 
+
+#----------------------------------------------
+#to do list:
+# 1, if pve server is run this scription already.
+# then run this scription again, must jump to end.
+# 2, update,upgrade speed is very slower, must update connect with v2ray proxy.
+# --2019.5.14
 
 echo "kill subsciption notify"
 cd /usr/share/javascript/proxmox-widget-toolkit/
