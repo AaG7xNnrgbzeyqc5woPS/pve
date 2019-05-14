@@ -28,6 +28,7 @@
 
 function hack_pve_subscription()
 {
+  echo
   echo "-----kill subscription notify-----"
   echo " ---only test for pve 5.4-3 --- "
   
@@ -59,12 +60,14 @@ function hack_pve_subscription()
   fi
 
   cd
+  echo
   return 0
 }
 
-function update_pve()
+function pve_ready_update()
 {
-  echo "-------update pve----------"
+  echo
+  echo "-------ready update pve ----------"
   echo 
   
   local list_path="/etc/apt/sources.list.d/"
@@ -76,24 +79,29 @@ function update_pve()
   if [ -e ${entlist} ]
   then
     rm -f ${entlist}  
-    echo "remove ${entlist}, path=${list_path} OK!"
+    echo "----remove ${entlist}, path=${list_path} OK!"
+    echo
     
     echo ${item_repo} > ${repolist} 
-    echo "Add item to ${repolist}, OK!"
+    echo "--- Add item to ${repolist}, OK!"
+    echo
     cd
     
     wget http://download.proxmox.com/debian/proxmox-ve-release-5.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg
     chmod +r /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg # optional, if you have a changed default umask
-    echo "Download proxmox-ve-release-5.x.gpg that is gpg key! OK!"
+    echo
+    echo "------Download proxmox-ve-release-5.x.gpg that is gpg key! OK!"
+    echo
   else
     echo "File ${list_path}${entlist} Do NOT exist, This script '$0' is runned already! Don'd need run again."  
   fi
   
   cd
+  echo
   return 0
 }
 
-function upgrade()
+function pve_upgrade()
 {
   echo "--------now update and upgrade --------"
   echo ""
@@ -103,5 +111,5 @@ function upgrade()
 }
 
 #hack_pve_subscription
-update_pve
+pve_ready_update
 
