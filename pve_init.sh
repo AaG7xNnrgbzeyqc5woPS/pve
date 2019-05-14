@@ -31,11 +31,11 @@ function hack_pve_subscription()
   echo "-----kill subscription notify-----"
   echo " ---only test for pve 5.4-3 --- "
   
-  fpve_js_path="/usr/share/javascript/proxmox-widget-toolkit/"
+  local fpve_js_path="/usr/share/javascript/proxmox-widget-toolkit/"
   cd ${fpve_js_path}
 
-  js0="proxmoxlib.js"
-  js_bak="proxmoxlib_bak.js"
+  local js0="proxmoxlib.js"
+  local js_bak="proxmoxlib_bak.js"
   
   if [ -e ${js0} ]
   then
@@ -75,14 +75,18 @@ function update_pve()
   if [ -e ${entlist} ]
   then
     rm -f ${entlist}  
-    echo item_repo > ${repolist}
-  
+    echo item_repo > ${repolist}  
     cd
     
     wget http://download.proxmox.com/debian/proxmox-ve-release-5.x.gpg -O /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg
     chmod +r /etc/apt/trusted.gpg.d/proxmox-ve-release-5.x.gpg # optional, if you have a changed default umask
+  else
+    cd
+    echo "file ${entlist} Do NOT exist, This script  is runned already! Don'd need run again." 
+    
   fi
   
+  cd
   return 0
 }
 
@@ -92,4 +96,6 @@ function upgrade()
   return 0
 }
 
-hack_pve_subscription
+#hack_pve_subscription
+update_pve
+
