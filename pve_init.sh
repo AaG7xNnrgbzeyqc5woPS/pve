@@ -93,7 +93,11 @@ function pve_ready_update()
     echo "------Download proxmox-ve-release-5.x.gpg that is gpg key! OK!"
     echo
   else
-    echo "File ${list_path}${entlist} Do NOT exist, This script '$0' is runned already! Don'd need run again."  
+    echo
+    echo "----- File ${list_path}${entlist} Do NOT exist------"
+    echo "------This script '$0' is runned already! ----"
+    echo "------Don'd need run again.------"  
+    echo
   fi
   
   cd
@@ -111,5 +115,8 @@ function pve_upgrade()
 }
 
 #pve_pve_subscription
-pve_ready_update
+#pve_ready_update
+pve_upgrade
+
+
 
