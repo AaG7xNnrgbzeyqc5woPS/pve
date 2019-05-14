@@ -23,12 +23,29 @@
 # 2, update,upgrade speed is very slower, must update connect with v2ray proxy.
 # --2019.5.14
 
-echo "kill subsciption notify"
-cd /usr/share/javascript/proxmox-widget-toolkit/
-cp -n proxmoxlib.js proxmoxlib_bak.js
+#My shell script skill update, Now can use funciton.
 
-# sed -i 's/.*data.status.*/ if(false){/' proxmoxlib.js
-sed -i 's/.*data.status.*/ if(false){ \/\/ hack subscription notify!/' proxmoxlib.js
+
+function hack_pve_subscription()
+{
+  echo "kill subscription notify"
+  fpve_js_path="/usr/share/javascript/proxmox-widget-toolkit/"
+  cd fpve_js_path
+
+  js0="proxmoxlib.js"
+  js_bak="proxmoxlib_bak.js"
+  if [ -e ${js_bak} ]
+  then
+    cp -n ${js0} ${js_bak}
+
+    # sed -i 's/.*data.status.*/ if(false){/' proxmoxlib.js
+    sed -i 's/.*data.status.*/ if(false){ \/\/ hack subscription notify!/' proxmoxlib.js
+  fi
+
+  cd
+  return 0
+}
+
 
 echo "update pve"
 cd 
