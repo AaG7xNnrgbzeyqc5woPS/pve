@@ -26,7 +26,7 @@
 #My shell script skill update, Now can use funciton.
 
 
-function hack_pve_subscription()
+function pve_pve_subscription()
 {
   echo
   echo "-----kill subscription notify-----"
@@ -110,6 +110,6 @@ function pve_upgrade()
   return 0
 }
 
-#hack_pve_subscription
+#pve_pve_subscription
 pve_ready_update
 
