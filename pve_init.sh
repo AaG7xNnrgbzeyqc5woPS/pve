@@ -29,23 +29,40 @@
 function hack_pve_subscription()
 {
   echo "-----kill subscription notify-----"
+  echo " ---only test for pve 5.4-3 --- "
+  
   fpve_js_path="/usr/share/javascript/proxmox-widget-toolkit/"
   cd ${fpve_js_path}
 
   js0="proxmoxlib.js"
   js_bak="proxmoxlib_bak.js"
+  
+  if [ -e ${js0} ]
+  then
+    echo Exist ${js0}, OK!
+  else
+    echo No Exist ${js0}, Error!
+    return -1
+  fi
+  
   if [ -e ${js_bak} ]
   then
+    echo Exist ${js_bak} file already
+  else
+    echo No exist ${js_bak} file!
     cp -n ${js0} ${js_bak}
+    echo Now copy ${js0} to ${js_bak}
 
     # sed -i 's/.*data.status.*/ if(false){/' proxmoxlib.js
-    sed -i 's/.*data.status.*/ if(false){ \/\/ hack subscription notify!/' proxmoxlib.js
+    sed -i 's/.*data.status.*/ if(false){ \/\/ hack subscription notify!/' ${js0}
+    echo Hack ${js0} OK!
   fi
 
   cd
   return 0
 }
 
+hack_pve_subscription
 
 echo "update pve"
 cd 
