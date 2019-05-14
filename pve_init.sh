@@ -28,9 +28,9 @@
 
 function hack_pve_subscription()
 {
-  echo "kill subscription notify"
+  echo "-----kill subscription notify-----"
   fpve_js_path="/usr/share/javascript/proxmox-widget-toolkit/"
-  cd fpve_js_path
+  cd ${fpve_js_path}
 
   js0="proxmoxlib.js"
   js_bak="proxmoxlib_bak.js"
