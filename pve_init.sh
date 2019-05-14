@@ -17,9 +17,13 @@
 #if have subsription notify ,please  clear firefox cache buffer. 
 
 #----------------------------------------------
-#to do list:
+# done list:
 # 1, if pve server is run this scription already.
 # then run this scription again, must jump to end.
+# this task is done!
+# --2019.5.14
+
+# to do list
 # 2, update,upgrade speed is very slower, must update connect with v2ray proxy.
 # --2019.5.14
 
