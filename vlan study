@@ -9,4 +9,20 @@ https://techterms.com/definition/vlan
 看完这几篇文章,你就是专家啦
 
 https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E5%B1%80%E5%9F%9F%E7%BD%91/419962?fromtitle=VLAN&fromid=320429
+https://forum.huawei.com/enterprise/zh/thread-282003.html
+
 再加一篇文章
+-----------------
+前两期小编介绍了VLAN的基础知识以及如何划分VLAN，之后不断有读者询问： 
+VLAN划分后，同一VLAN用户可以二层互通，不同VLAN用户则二层隔离，
+可有些场合不同VLAN用户又想互通，肿么办呢？
+
+请大家先回忆一下：VLAN是广播域，而广播域之间来往的数据包一般由路由器中继的。
+因此，VLAN间的通信通常要用到路由功能，这被称作“VLAN间路由”。
+VLAN间路由，可以使用普通的路由器，也可以使用三层交换机。
+有了这个初步认识，接下来小编就开始介绍使用三层交换机进行VLAN间通信的主要场景和技术。 
+---------------------------------------------
+
+集线器、网桥、交换机、路由器、网关大解析
+https://www.tianmaying.com/tutorial/NetWorkInstrument
+
