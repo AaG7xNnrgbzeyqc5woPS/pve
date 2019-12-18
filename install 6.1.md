@@ -12,13 +12,14 @@
     SHA256SUMS for the ISO:  
        95434b81cf74fdb5f8ac3e341c55293e10dafd1a75d1be45668ccb25f7d3c93c  
      
-## 3. 检查校验和4,Central Web-based Management
+## 3. 检查校验和
     https://pve.proxmox.com/wiki/Central_Web-based_Management  
     使用下面的命令计算proxmox-ve_6.1-1.iso的校验和   
     $ sha256sum proxmox-ve_6.1-1.iso   
     $ 95434b81cf74fdb5f8ac3e341c55293e10dafd1a75d1be45668ccb25f7d3c93c  proxmox-ve_6.1-1.iso  
     这个校验和 同上面的对比,一模一样.校验成功!  
-   ### 注释: 
+    
+    注释: 
       我在下载时候,第一次计算的,结果同官网上的不一样,
       最后 使用 qBittorrent 的 force recheck命令,
       再做 sha256sum计算,校验和就正确啦.   
