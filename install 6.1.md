@@ -11,7 +11,7 @@ https://www.proxmox.com/en/downloads
   两种方法下载的 iso文件的校验和应该是一样的
   SHA256SUMS for the ISO:
    95434b81cf74fdb5f8ac3e341c55293e10dafd1a75d1be45668ccb25f7d3c93c
-     $ 
+     
 3, 检查校验和
   使用下面的命令计算proxmox-ve_6.1-1.iso的校验和
   $ sha256sum proxmox-ve_6.1-1.iso 
@@ -21,6 +21,23 @@ https://www.proxmox.com/en/downloads
       也是第一次使用 qBittorrent 工具, 下载没有完全成功也看不出来.
       再一次强调了, 使用 sha256sum验证校验和是多么重要.
       
-4. 
+4. 制作pve的安装U盘
+    参考:
+    https://pve.proxmox.com/wiki/Install_from_USB_Stick
+    
+  a. use:  dd if=proxmox-ve_6.1-1.iso of=/dev/XYZ bs=1M
+     in my computer: XYZ=sdb
+  b.  other way:
+    use etcher flash proxmox-ve_6.1-1.iso to usb stick
+    please note: In arch and manjaro etcher is name:  balenaEtcher
+    
+    
+ 5. 安装
+   参考:
+   https://pve.proxmox.com/wiki/Quick_installation
+   
+ 6. 管理:
+   Central Web-based Management
+   https://pve.proxmox.com/wiki/Central_Web-based_Management
       
   
