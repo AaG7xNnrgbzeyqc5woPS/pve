@@ -34,7 +34,10 @@
        in my computer: XYZ=sdb  
     b.  other way:  
       use etcher flash proxmox-ve_6.1-1.iso to usb stick  
-      please note: In arch and manjaro etcher is name:  balenaEtcher  
+      please note: In arch and manjaro etcher is name:  
+      balenaEtcher  
+      balena-Etcher 
+      balena Etcher    
     
     
 ## 5. 安装  
