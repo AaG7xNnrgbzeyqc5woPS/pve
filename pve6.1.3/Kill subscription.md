@@ -10,7 +10,7 @@ for pve 6.1.3
    c0) edit file: /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
    c1) find line:  if(data.status!=='Active'){
    c2) fixed this line to:  if(false){
-   
+       原文如下,请看仔细点:
                     if (data.status !== 'Active') {
                     Ext.Msg.show({
                         title: gettext('No valid subscription'),
