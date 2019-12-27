@@ -4,6 +4,7 @@
 # url: https://github.com/AaG7xNnrgbzeyqc5woPS/pve/blob/master/pve_init.sh
 # first pve init config shell script
 #for pve 5.4-3
+# for pve 6.1-3 检查了下6.1-3源码,应该对6.1-3有效
 # 1, kill subsciption notify
 # 2, update pve
 # writed at 2019.5.13 
