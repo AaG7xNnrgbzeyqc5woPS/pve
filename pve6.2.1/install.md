@@ -1,12 +1,12 @@
 # see:
    [proxmox pve wiki Main Page](https://pve.proxmox.com/wiki/Main_Page)   
-   [proxmox pve 6.2 download ](https://pve.proxmox.com/wiki/Downloads#Proxmox_Virtual_Environment_6.2_.28ISO_Image.29)
-   [proxmox pve 6.2 ISO info](https://www.proxmox.com/en/downloads/item/proxmox-ve-6-2-iso-installer)
+   [proxmox pve 6.2 download ](https://pve.proxmox.com/wiki/Downloads#Proxmox_Virtual_Environment_6.2_.28ISO_Image.29)  
+   [proxmox pve 6.2 ISO info](https://www.proxmox.com/en/downloads/item/proxmox-ve-6-2-iso-installer)  
    
    
 # 1. Download iso image
 ## 1.1. Proxmox VE 6.2 ISO Installer information: 
-  [Proxmox VE 6.2 ISO Installer ](https://www.proxmox.com/en/downloads/item/proxmox-ve-6-2-iso-installer)
+  [Proxmox VE 6.2 ISO Installer ](https://www.proxmox.com/en/downloads/item/proxmox-ve-6-2-iso-installer)  
   
   
     Last update: 12 May 2020
@@ -16,7 +16,7 @@
     SHA256SUMS for the ISO:
     d8fb3cfba19d38aa0c05452a954150f96e3ee455a36d52427aa26e6906fb8bff
     
-  [Proxmox VE 6.2 ISO Installer (BitTorrent) ](https://www.proxmox.com/en/downloads/item/proxmox-ve-6-2-iso-installer-bittorrent)
+  [Proxmox VE 6.2 ISO Installer (BitTorrent) ](https://www.proxmox.com/en/downloads/item/proxmox-ve-6-2-iso-installer-bittorrent) 
     
     Last update: 12 May 2020
     File size: 33.86 KB
@@ -34,7 +34,7 @@
    
 ## 1.3. download "proxmox-ve-6-2-iso-installer-bittorrent"
 ### 1.3.1. click this link and down bittorrent seed file:
-   [Proxmox VE 6.2 ISO Installer (BitTorrent) ](https://www.proxmox.com/en/downloads/item/proxmox-ve-6-2-iso-installer-bittorrent)
+   [Proxmox VE 6.2 ISO Installer (BitTorrent) ](https://www.proxmox.com/en/downloads/item/proxmox-ve-6-2-iso-installer-bittorrent)  
    
 ### 1.3.2. download "Proxmox VE 6.2 ISO Installer" with transmission-gtk  and seed file
 ### 1.3.3. check sha512sum for  "Proxmox VE 6.2 ISO"
@@ -42,7 +42,7 @@
     d8fb3cfba19d38aa0c05452a954150f96e3ee455a36d52427aa26e6906fb8bff  proxmox-ve_6.2-1.iso  #ok!
     
 # 2.  Prepare Installation Media  
-  see: [Prepare_Installation_Media](https://pve.proxmox.com/wiki/Prepare_Installation_Media)
+  see: [Prepare_Installation_Media](https://pve.proxmox.com/wiki/Prepare_Installation_Media)  
 
 ## 2.1. Prepare a USB Flash Drive as Installation Medium
 
@@ -70,23 +70,31 @@ Then plug in your USB flash drive and run the command again:
 
 A new device will appear. This is the one you want to use. To be on the extra safe side check if the reported size matches your USB flash drive.
 
-## 2.3 Instructions for Windows
-### 2.3.1 Using Etcher
+## 2.3. Instructions for Manjaro
+    sudo pacman -S etcher
+    etcher
+    lsblk
+
+## 2.4 Instructions for Windows
+### 2.4.1 Using Etcher
 
 Etcher works out of the box. Download Etcher from https://etcher.io. It will guide you through the process of selecting the ISO and your USB Drive.
 
-### 2.3.2 Using Rufus
+### 2.4.2 Using Rufus
 
 Rufus is a more lightweight alternative, but you need to use the DD mode to make it work. Download Rufus from https://rufus.ie/. Either install it or use the portable version. Select the destination drive and the Proxmox VE ISO file.
 Important 	Once you Start you have to click No on the dialog asking to download a different version of GRUB. In the next dialog select the DD mode.
    
   
-## 2.4. Boot your Server from the USB Flash Drive
+## 2.5. Boot your Server from the USB Flash Drive
 
 Connect the USB flash drive to your server and make sure that booting from USB is enabled (check your servers firmware settings). Then follow the steps in the installation wizard.
 
-# 4.  Installation proxmox pve
-  https://pve.proxmox.com/wiki/Installation
+
+
+# 3.  Installation proxmox pve
+  https://pve.proxmox.com/wiki/Installation  
+  
 
     
     
