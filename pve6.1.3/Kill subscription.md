@@ -24,6 +24,7 @@
                             orig_cmd();
                         }
                     });
+     c3) if note please using "//"
 
    
     d) save file
