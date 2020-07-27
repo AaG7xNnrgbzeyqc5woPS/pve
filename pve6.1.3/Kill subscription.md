@@ -3,7 +3,12 @@
 # for pve 6.1.3
 ## 1, Kill subscription
    
-    a) login pve server,  
+    a) login pve server
+      a1) login pve at control 
+      b2) or remote lonin: 
+        #ssh root@your_pve_ip
+    
+    b) fix file: "/usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js"
     b0) cd /usr/share/javascript/proxmox-widget-toolkit/  
     b1) cp proxmoxlib.js proxmoxlib_bak.js  
    
