@@ -52,3 +52,6 @@
    
     d) Update your repository and system by running:
     # apt update && apt dist-upgrade -y
+    
+    e) reboot your pve server
+    # reboot
