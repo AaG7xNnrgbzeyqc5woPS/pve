@@ -1,5 +1,7 @@
 # pve
 Proxmox VE install, config...
+- [pve wiki](https://pve.proxmox.com/wiki/Main_Page)
+- [pve web](https://www.proxmox.com/en/)
 
 ## 1, install.txt
   这个是pve安装教程，笔记
