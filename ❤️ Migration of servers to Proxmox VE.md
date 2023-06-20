@@ -45,3 +45,13 @@ lsb-release -a
 
 - CT 容器目录：/rpool/data， 每个容器会在该目录下建立一个子目录，子目录内有很多文件夹，很多文件。
 
+# 2. 常用命令
+## 2.1 Converting between image formats
+- [Converting between image formats](https://docs.openstack.org/image-guide/convert-images.html)
+- [Converting to qcow2](https://pve.proxmox.com/wiki/Migration_of_servers_to_Proxmox_VE)
+
+``` 
+qemu-img convert -f vmdk /mnt/usb/windows-server/windows-server.vmdk -O qcow2 /var/lib/vz/images/100/windows-server.qcow2
+```
+
+
