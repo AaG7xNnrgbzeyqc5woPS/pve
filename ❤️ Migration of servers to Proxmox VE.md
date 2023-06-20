@@ -6,6 +6,22 @@
 - ❤️[Importing VMware Images](https://zachgrace.com/cheat_sheets/proxmox/)
 
 # 准备工作
+## 0. 安装工具
+```
+apt update
+apt full-upgrade
+apt install neofecth
+apt install screenfetch
+neofecth
+screenfetch
+```
+
+```
+apt install lsb-release
+lsb-release -a
+
+```
+
 ## 1. 查找文件或者目录
 命令格式：find path -name filename
 ```
