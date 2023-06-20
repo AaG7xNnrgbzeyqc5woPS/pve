@@ -52,6 +52,23 @@ lsb-release -a
 
 ``` 
 qemu-img convert -f vmdk /mnt/usb/windows-server/windows-server.vmdk -O qcow2 /var/lib/vz/images/100/windows-server.qcow2
+
+qemu-img convert -f raw  -O qcow2 image.img  image.qcow2
+qemu-img convert -f vmdk -O raw   image.vmdk image.img
+qemu-img convert -f vmdk -O qcow2 image.vmdk image.qcow2
+```
+
+## 2.2 Importovf
+qm importovf 200 /tmp/exported-vm.ovf local-lvm
+
+## 2.3 Check info
+```
+# qemu-img check Windows_Server_2003_Enterprise_Edition20210519-disk1.vmdk
+qemu-img: Could not open 'Windows_Server_2003_Enterprise_Edition20210519-disk1.vmdk': Invalid footer
+
+root@pve:/var/lib/vz/template/iso# qemu-img info Windows_Server_2003_Enterprise_Edition20210519-disk1.vmdk
+qemu-img: Could not open 'Windows_Server_2003_Enterprise_Edition20210519-disk1.vmdk': Invalid footer
+
 ```
 
 
