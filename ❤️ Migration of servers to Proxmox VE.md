@@ -23,7 +23,7 @@ lsb-release -a
 ```
 
 ## 1.1. 查找文件或者目录
-命令格式：find path -name filename
+- 命令格式：find path -name filename
 ```
   # 
   # find / -name *.iso   //可以找出 全部iso文件，在zfs文件系统下，已经ssd硬盘的情况下，速度超级快，几秒而已。
@@ -40,3 +40,8 @@ lsb-release -a
 # cd /var/lib/vz/template/cache/      #进入CT 容器模板文件夹
 # pwd
 ```
+- backup 目录： /var/lib/vz/dump/
+- vm 目录：/dev/zvol/rpool/data 和 /dev/rpool/data， 找到两个，最后里面都是软链接，指向同样的地方。
+
+- CT 容器目录：/rpool/data， 每个容器会在该目录下建立一个子目录，子目录内有很多文件夹，很多文件。
+
