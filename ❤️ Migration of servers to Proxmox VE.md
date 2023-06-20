@@ -1,12 +1,12 @@
-# See:
+# 0. See:
 - [Migration of servers to Proxmox VE](https://pve.proxmox.com/wiki/Migration_of_servers_to_Proxmox_VE)
 - [Converting between image formats](https://docs.openstack.org/image-guide/convert-images.html)
 - [proxmox虚拟机中添加外部硬盘 ](https://www.cnblogs.com/weihua2020/p/13717318.html)
 - [How to Import QCOW2 into Proxmox Server? | Step by Step.](https://getlabsdone.com/how-to-import-qcow2-into-proxmox-server-step-by-step/)
 - ❤️[Importing VMware Images](https://zachgrace.com/cheat_sheets/proxmox/)
 
-# 准备工作
-## 0. 安装工具
+# 1. 准备工作
+## 1.0. 安装工具
 ```
 apt update
 apt full-upgrade
@@ -22,7 +22,7 @@ lsb-release -a
 
 ```
 
-## 1. 查找文件或者目录
+## 1.1. 查找文件或者目录
 命令格式：find path -name filename
 ```
   # 
