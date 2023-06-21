@@ -71,4 +71,22 @@ qemu-img: Could not open 'Windows_Server_2003_Enterprise_Edition20210519-disk1.v
 
 ```
 
+## 2.4 有没有什么软件可以映射vdi，vmdk等格式的虚拟磁盘文件
+- [有没有什么软件可以映射vdi，vmdk等格式的虚拟磁盘文件?](https://www.zhihu.com/question/443843094)
+
+### Linux HostLinux 
+ 最简单，本身支持各种文件系统，块设备文件的抽象简单粗暴：
+ - 用 libguestfs 的 guestmount 工具直接挂载文件系统；
+ - 用 qemu-nbd 挂载为一个 NBD 设备 /dev/nbdX，然后就可以和本地硬盘一样操作了。
+ 
+#### Windows host,  Windows guest
+ 7-Zip，像打开压缩包一样直接打开虚拟磁盘文件，只读。
+ 
+ ImDisk Toolkit，把虚拟磁盘上的分区挂载到盘符或路径。
+ 
+### Windows host, Linux guest
+ 文件系统驱动是个大问题，最好还是开个 Ubuntu Live OS，用 SMB 共享出来。
+
+
+
 
