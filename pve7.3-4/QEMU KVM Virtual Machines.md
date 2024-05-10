@@ -26,4 +26,6 @@ QEMU relies on the virtio virtualization standard, and is thus able to present p
 
 # 总结：
 > Using the virtio generic disk controller versus an emulated IDE controller will double the sequential write throughput, as measured with bonnie++(8). Using the virtio network interface can deliver up to three times the throughput of an emulated Intel E1000 network card, as measured with iperf(1).
-** 使用 virtio 驱动，硬盘可以提速2倍，网络提速3倍！**
+
+
+❤️** 使用 virtio 驱动，硬盘可以提速2倍，网络提速3倍！**
