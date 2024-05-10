@@ -1,6 +1,6 @@
 # QEMU/KVM Virtual Machines
 - version 7.4, Wed 22 Mar 2023 02:52:09 PM CET
-- [pve-docs](https://192.168.2.3:8006/pve-docs/chapter-qm.html)
+- [See: pve-docs](https://192.168.2.3:8006/pve-docs/chapter-qm.html)
 
 QEMU (short form for Quick Emulator) is an open source hypervisor that emulates a physical computer. From the perspective of the host system where QEMU is running, QEMU is a user program which has access to a number of local resources like partitions, files, network cards which are then passed to an emulated computer which sees them as if they were real devices.
 
