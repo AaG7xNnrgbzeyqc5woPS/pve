@@ -9,7 +9,7 @@ A guest operating system running in the emulated computer accesses these devices
 QEMU can emulate a great variety of hardware from ARM to Sparc, but Proxmox VE is only concerned with 32 and 64 bits PC clone emulation, since it represents the overwhelming majority of server hardware. The emulation of PC clones is also one of the fastest due to the availability of processor extensions which greatly speed up QEMU when the emulated architecture is the same as the host architecture.
  	
 **NOTE**
->> You may sometimes encounter the term KVM (Kernel-based Virtual Machine). It means that QEMU is running with the support of the virtualization processor extensions, via the Linux KVM module. In the context of Proxmox VE QEMU and KVM can be used interchangeably, as QEMU in Proxmox VE will always try to load the KVM module.
+> You may sometimes encounter the term KVM (Kernel-based Virtual Machine). It means that QEMU is running with the support of the virtualization processor extensions, via the Linux KVM module. In the context of Proxmox VE QEMU and KVM can be used interchangeably, as QEMU in Proxmox VE will always try to load the KVM module.
 
 QEMU inside Proxmox VE runs as a root process, since this is required to access block and PCI devices.
 
@@ -22,5 +22,5 @@ This however has a performance cost, as running in software what was meant to ru
 QEMU relies on the virtio virtualization standard, and is thus able to present paravirtualized virtio devices, which includes a paravirtualized generic disk controller, a paravirtualized network card, a paravirtualized serial port, a paravirtualized SCSI controller, etc …
 
 **Tip**
->> It is highly recommended to use the virtio devices whenever you can, as they provide a big performance improvement and are generally better maintained. Using the virtio generic disk controller versus an emulated IDE controller will double the sequential write throughput, as measured with bonnie++(8). Using the virtio network interface can deliver up to three times the throughput of an emulated Intel E1000 network card, as measured with iperf(1). [1]
+> It is highly recommended to use the virtio devices whenever you can, as they provide a big performance improvement and are generally better maintained. Using the virtio generic disk controller versus an emulated IDE controller will double the sequential write throughput, as measured with bonnie++(8). Using the virtio network interface can deliver up to three times the throughput of an emulated Intel E1000 network card, as measured with iperf(1). [1]
 
