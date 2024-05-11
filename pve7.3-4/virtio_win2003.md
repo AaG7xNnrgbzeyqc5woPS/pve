@@ -14,11 +14,13 @@
  
 # 1，安装windows2003 R2 x64 sp2 中文企业版（VOL大客户版）x13-47314
 ## 1.1 版本信息
-   - [indow2003R2简体中文企业版 版本信息](https://github.com/AaG7xNnrgbzeyqc5woPS/linux_help/blob/master/win2003/window2003R2%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E4%BC%81%E4%B8%9A%E7%89%88.md)
-   - [win2003R2简体中文企业版密钥](https://github.com/AaG7xNnrgbzeyqc5woPS/linux_help/blob/master/win2003/win2003R2%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E4%BC%81%E4%B8%9A%E7%89%88%E5%AF%86%E9%92%A5.md)
-
+   - See: [indow2003R2简体中文企业版 版本信息](https://github.com/AaG7xNnrgbzeyqc5woPS/linux_help/blob/master/win2003/window2003R2%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E4%BC%81%E4%B8%9A%E7%89%88.md)
+   - See: [win2003R2简体中文企业版密钥](https://github.com/AaG7xNnrgbzeyqc5woPS/linux_help/blob/master/win2003/win2003R2%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E4%BC%81%E4%B8%9A%E7%89%88%E5%AF%86%E9%92%A5.md)
    - Windows Server 2003 R2, Enterprise x64 Edition with SP2 - Disc 1 - VL (Simplified Chinese)
    - Windows Server 2003 R2, Enterprise x64 Edition with SP2 - Disc 2 - VL (Simplified Chinese)
+   - cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
+   - cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd2_X13-35321.iso
+     
    ```
      Name: cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
      Size: 647686144 bytes (617 MB)
@@ -28,7 +30,20 @@
      SHA1:     FDA1A0401CA610F6E3A7780D6DB004DA2F944138
      BLAKE2sp: 7820EB604F2FA331017DCA5E86C308D78E267DB7C6A6FC8D685D9D64CF8C90C
    ```
-## 1.1 
+## 1.2 安装序列号：BBGTH-2VC48-J98CM-969J7-3YPMJ
+- BBGTH-2VC48-J98CM-969J7-3YPMJ
+❤️ 这个序列号成功! 2024-5-10
+
+hash256和文件名： 
+0a4023c7aeae60767bfcd539fb0207d1aa67364e9bc4c53508c8fdf60992a24d cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
+```
+root@pve:/var/lib/vz/template/iso# sha256sum cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
+0a4023c7aeae60767bfcd539fb0207d1aa67364e9bc4c53508c8fdf60992a24d  cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
+```
+
+## 1.3 安装过程
+
+
 
 # 2，安装virtio驱动
 
