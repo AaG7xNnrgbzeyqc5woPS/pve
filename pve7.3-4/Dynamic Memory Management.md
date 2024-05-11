@@ -1,0 +1,2 @@
+- [Dynamic Memory Management](https://pve.proxmox.com/wiki/Dynamic_Memory_Management)
+- [Quick Method to install DevCon.exe?](https://superuser.com/questions/1002950/quick-method-to-install-devcon-exe)
