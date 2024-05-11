@@ -45,10 +45,38 @@ root@pve:/var/lib/vz/template/iso# sha256sum cn_win_srv_2003_r2_enterprise_x64_w
 - 下载 两张 CD盘 的 ISO 文件，并且上传到 pve服务器上，使用sha256校验数据 的准确性
 
 ## 1.4 创建pve虚拟机
-1，
+- 对于windows server 2003, 由于使用 安装设置virtio驱动有困难，”Setup During Windows Installation“，我们使用“Setup On Running Windows“方法，
+- 先安装好windows server 2003 r2,然后再安装virtio驱动,这样任务分两部分，也便于排错。
+- ❤️注意：在安装windows的时候安装，为了装载驱动程序，windows server 2003 R2 必须需要使用软盘。这需要更多的步骤和知识，谨慎尝试，不推荐。
+- 先创建**普通**的虚拟机，参数如下：
+1. 内存 2G
+2. CPU 2
+3. BIOS Default(SeaBIOS)
+4. Display Default
+5. Machine Default
+6. SCSI Controller  Default
+7. CD/DVD Drive(ide0)
+8. Hard Disk:    IDE 60G
+9. Network Device:  Realtek RTL8139
 
-
+## 1.5 安装 window server 2003 R2 x64 中文版
+- 具体过程略
+- 
 
 
 # 2，安装virtio驱动
+- 具体过程参考: [Windows 2003 guest best practices](https://pve.proxmox.com/wiki/Windows_2003_guest_best_practices)
+
+# 2.1 驱动版本：
+目前已经尝试了以下版本：
+- virtio-win-0.1.248.iso (不支持 windows 2003)
+- virtio-win-0.1.240.iso (不支持 windows 2003)
+- virtio-win-0.1.149.iso (支持)
+- virtio-win-0.1.141.iso（支持）
+
+**试验过程及心得**：
+- 对于不支持的 版本，virtio-win安装程序会提示需要什么样的操作系统版本，并且会退出，所以不会造成任何问题，只会浪费点时间。
+- 
+  
+
 
