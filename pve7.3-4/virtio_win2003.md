@@ -91,3 +91,6 @@ root@pve:/var/lib/vz/template/iso# sha256sum cn_win_srv_2003_r2_enterprise_x64_w
 5. Guest Agent is running: Can Show IP
 6. 使用 pve web 控制台能关闭 ，重启 windows server 2003 虚拟机。非常方便！
 7. 💔注意：使用动态内存（Ballooning Device）功能失败，更改内存设置后，虚拟无法启动，是否是设置错误还需要研究。
+
+# 2.3 内存的变动bug
+1. 对于内存问题，又试过很多次，多种配置，windows server 2003 服务器还是不能启动。只有使用原始2G固定内存才能启动，Ballooning 选项是选择的。
