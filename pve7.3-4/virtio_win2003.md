@@ -32,9 +32,9 @@
    ```
 ## 1.2 安装序列号：BBGTH-2VC48-J98CM-969J7-3YPMJ
 - BBGTH-2VC48-J98CM-969J7-3YPMJ
-❤️ 这个序列号成功! 2024-5-10
+- ❤️ 这个序列号成功! 2024-5-10
 
-hash256和文件名： 
+hash256和文件名：    
 0a4023c7aeae60767bfcd539fb0207d1aa67364e9bc4c53508c8fdf60992a24d cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
 ```
 root@pve:/var/lib/vz/template/iso# sha256sum cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
