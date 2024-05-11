@@ -11,4 +11,5 @@
   - 经过测试，效果同 手工安装 BALLOON.inf 驱动一样。
   - 同样是 开机几分钟内，内存降低 到 300M以下。
   - devcon 程序在 第一张安装盘内可以找到 cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
-  -  
+  - 在该盘片中的压缩包 SUPPORT\TOOLS\SUPPORT.cab 内可以找到 devcon.exe
+  - 将 devcon.exe 拷贝到 C:\WINDOWS\system32, 备用
