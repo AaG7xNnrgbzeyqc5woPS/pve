@@ -13,3 +13,4 @@
   - devcon 程序在 第一张安装盘内可以找到 cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
   - 在该盘片中的压缩包 SUPPORT\TOOLS\SUPPORT.cab 内可以找到 devcon.exe
   - 将 devcon.exe 拷贝到 C:\WINDOWS\system32, 备用
+  - 这个是方案二，其实可以不用做的。
