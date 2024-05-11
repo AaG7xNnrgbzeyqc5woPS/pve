@@ -81,6 +81,13 @@ root@pve:/var/lib/vz/template/iso# sha256sum cn_win_srv_2003_r2_enterprise_x64_w
 - 下次再安装可以 直接用 virtio-win-0.1.149.iso 实验下，应该更完美。
 - 其它的比 virtio-win-0.1.149.iso版本高的，是否还能提供对 windows server 2003支持，需要进一步实验。
 - 
-  
 
 
+# 2.2 安装的驱动和功能
+1. Display VirtIO-GPU(virtio)
+2. SCSI Controller： VirtIO SCSI single
+3. Hard Disk: 60G
+4. Network Device: VirtIO(paravirtualized)
+5. Guest Agent is running: Can Show IP
+6. 使用 pve web 控制台能关闭 ，重启 windows server 2003 虚拟机。非常方便！
+7. 注意：使用动态内存（Ballooning Device）功能失败，更改内存设置后，虚拟无法启动，是否是设置错误还需要研究。
