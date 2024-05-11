@@ -41,7 +41,12 @@ root@pve:/var/lib/vz/template/iso# sha256sum cn_win_srv_2003_r2_enterprise_x64_w
 0a4023c7aeae60767bfcd539fb0207d1aa67364e9bc4c53508c8fdf60992a24d  cn_win_srv_2003_r2_enterprise_x64_with_sp2_vl_cd1_X13-47314.iso
 ```
 
-## 1.3 安装过程
+## 1.3 下载ISO文件
+- 下载 两张 CD盘 的 ISO 文件，并且上传到 pve服务器上，使用sha256校验数据 的准确性
+
+## 1.4 创建pve虚拟机
+1，
+
 
 
 
