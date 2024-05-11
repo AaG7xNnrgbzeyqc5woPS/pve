@@ -3,4 +3,5 @@
 
   # 测试 ballooning
   - 使用 pve GUI 打开 虚拟机windows server 2003 的 ballooning 选项
-  - 会看到 pve gui 中会看到内存使用值大幅度下降。由原来的1.45G下降到 0.3G
+  - 会看到 pve gui 中会看到内存使用值大幅度下降。由原来的1.48G下降到 298M。
+  - 
