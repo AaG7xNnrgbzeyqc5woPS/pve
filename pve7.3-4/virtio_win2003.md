@@ -94,3 +94,21 @@ root@pve:/var/lib/vz/template/iso# sha256sum cn_win_srv_2003_r2_enterprise_x64_w
 
 # 2.3 内存的变动bug
 1. 对于内存问题，又试过很多次，多种配置，windows server 2003 服务器还是不能启动。只有使用原始2G固定内存才能启动，Ballooning 选项是选择的。
+
+
+   
+# 2.4  kvmnet Performance Improvements
+
+The KVM Project has established a 'best practice' with regard to acheiving optimal performance in Windows guests using the virtio driver.
+
+Permanent changes to the Windows registry are required.
+
+The procedure is published here: http://www.linux-kvm.org/page/WindowsGuestDrivers/kvmnet/registry. 
+这几天这个网站出现数据库访问问题，前几天访问正常，过一段时间再看吧。
+```
+Sorry! This site is experiencing technical difficulties.
+
+Try waiting a few minutes and reloading.
+
+(Cannot access the database)
+```
