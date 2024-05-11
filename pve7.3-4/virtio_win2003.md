@@ -12,5 +12,8 @@
 - [virtio-win Project](https://github.com/virtio-win)
 - 
  
-# 
-- 
+# 1，安装windows2003 R2 x64 企业版
+   - Windows Server 2003 R2, Enterprise x64 Edition with SP2 
+## 1.1 
+# 2，安装virtio驱动
+
