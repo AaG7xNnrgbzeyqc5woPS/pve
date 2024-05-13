@@ -26,3 +26,10 @@
 # 4. 内存 1G/3G, ballooning = 1
 - 经过实验，windows 2003 支持  最小1G 内存，最大 3G 内存的方案。启动 ballooning = 1选项
 - 这个方案目前看来，运行良好！
+
+
+# 5. 更多的测试，情况不妙
+- 还是使用 2G固定内存，关闭 ballooning，即 ballooning = 0
+- 最佳指南也建议关闭ballooning， 即 ballooning = 0
+- windows 2003 内部的 ballooning 服务也删除了。避免报错。
+- 动态内存实验告一段落。
