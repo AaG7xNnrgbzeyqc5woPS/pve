@@ -1,5 +1,6 @@
 # see: 
 - [Openwrt-NFS管理，挂载硬盘NFS共享](https://www.moelm.cn/136.html)
+- [OpenWrt 搭建 NFS 服务器共享文件使用教程](https://iyzm.net/openwrt/882.html)
 
 # 在Openwrt上设置 NFS共享服务
 - 1，在 Openwrt 服务器上，菜单“网络存储\NFS管理”界面，上半部分界面“共享目录”，这里是把 Openwrt 服务器 某一个磁盘或者目录共享出去的，是提供NFS服务的。
