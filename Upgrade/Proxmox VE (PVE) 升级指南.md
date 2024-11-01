@@ -54,18 +54,22 @@ PVE 升级 是为了获取最新的功能、修复漏洞和提高系统稳定性
 ## 4、 升级示例（在线升级）
 Bash
 
-# 备份源列表
+备份源列表
+```
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-
-# 更新软件源
+```
+更新软件源
+```
 sudo apt update
-
-# 升级系统
+```
+升级系统
+```
 sudo apt dist-upgrade
-
-# 重启系统
+```
+重启系统
+```
 sudo reboot
-
+```
 请谨慎使用代码。
 
 **注意：**
