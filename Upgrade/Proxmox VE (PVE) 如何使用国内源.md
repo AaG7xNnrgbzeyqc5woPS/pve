@@ -11,6 +11,7 @@ Proxmox VE 是一个功能强大的虚拟化平台，为了提高软件包更新
 ## 1. 备份源列表
 
 在修改源列表之前，建议备份原有的 /etc/apt/sources.list 文件，以防出现问题时可以恢复。
+
 Bash
 ```
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
