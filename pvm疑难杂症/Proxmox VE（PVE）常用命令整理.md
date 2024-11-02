@@ -1,0 +1,3 @@
+- [Proxmox VE（PVE）常用命令整理](https://www.xrgzs.top/posts/pve-cmd)
+- [pvetools副本](https://github.com/AaG7xNnrgbzeyqc5woPS/pvetools)
+- [pvetools原版](https://github.com/ivanhao/pvetools)
