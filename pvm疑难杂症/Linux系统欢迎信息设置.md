@@ -1,5 +1,4 @@
 # See:
-- Linux 系统欢迎信息设置；登录提示信息设置；/etc/motd 设置
 - [Linux 系统欢迎信息设置；登录提示信息设置；/etc/motd 设置](https://www.cnblogs.com/xuyaowen/p/linux-login-info.html)
 - [教你如何修改Linux远程登录欢迎提示信息](https://cloud.tencent.com/developer/article/1722167)
 - [linux ssh登录后展示内容修改](https://www.cleey.com/blog/single/id/867.html)
