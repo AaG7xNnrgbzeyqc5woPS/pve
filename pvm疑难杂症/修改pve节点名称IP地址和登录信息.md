@@ -23,4 +23,5 @@
 /etc/network/interfaces（可以在web界面下修改）
 ```
 ## 3,修改主机登录信息
-- 
+- 上面的/etc/hostname，  /etc/hosts 修改后，主机的欢迎信息自动修改好了。
+- 直接修改 /etc/issue反而没有用，会被pve自动又改回原来的名字。应该是pve内部有些自动机制。
