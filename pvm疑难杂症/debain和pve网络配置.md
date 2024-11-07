@@ -11,6 +11,16 @@
 - 重启网络服务：``` sudo systemctl restart networking```
 - 查看网络接口ip ``` ip a ```
 
+## 2, /etc/network/interfaces 配置文件语法
+- 动态ip的配置
+```
+auto enp0s8
+iface enp0s8 inet dhcp
+```
+测试成功，可以从dhcp服务器获取ip地址  
+
+- **实测各段配置次序不重要，前后都可以。** 
+
 
 # 二、Debian Linux 网络配置指南
 
