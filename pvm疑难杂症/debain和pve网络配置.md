@@ -1,7 +1,18 @@
 # See: 
 [PVE 部署虚拟机内部网络](https://invites.fun/d/25411)
 
-# Debian Linux 网络配置指南
+# 一、笔记及要点：
+## 1，安全的修改配置文件/etc/network/interfaces
+- 进入目录 ```cd /etc/network/```
+- 保存备份 ```cp interfaces interfaces.bak```
+- 建立新的配置 ``` cp interfaces interfaces.new ```
+- 编辑新的配置 ``` nano interfaces.new ```
+- 使配置生效 ``` mv  interfaces.new interfaces```
+- 重启网络服务：``` sudo systemctl restart networking```
+- 查看网络接口ip ``` ip a ```
+
+
+# 二、Debian Linux 网络配置指南
 
 Debian Linux 的网络配置有多种方式，从传统的 /etc/network/interfaces 文件配置，到使用 NetworkManager 等工具进行图形化管理，再到使用 systemd-networkd 进行更现代化的配置。
 ## 1. 传统配置：/etc/network/interfaces
