@@ -48,12 +48,13 @@ apt update
 
 # 修改 CT Templates (LXC 容器) 源  
 
-将 /usr/share/perl5/PVE/APLInfo.pm 文件中默认的源地址 http://download.proxmox.com 替换为 https://mirrors.tuna.tsinghua.edu.cn/proxmox即可
+将 /usr/share/perl5/PVE/APLInfo.pm 文件中  
+默认的源地址 http://download.proxmox.com   
+替换为 https://mirrors.tuna.tsinghua.edu.cn/proxmox即可  
 ```
 cp /usr/share/perl5/PVE/APLInfo.pm /usr/share/perl5/PVE/APLInfo.pm_back
-sed -i 's | http://download.proxmox.com|https://mirrors.ustc.edu.cn/proxmox|g' /usr/share/perl5/PVE/APLInfo.pm
+sed -i 's|http://download.proxmox.com|https://mirrors.ustc.edu.cn/proxmox|g' /usr/share/perl5/PVE/APLInfo.pm
 ```
-
 针对 /usr/share/perl5/PVE/APLInfo.pm 文件的修改，重启后生效
 ```
 systemctl restart pvedaemon.service
