@@ -36,7 +36,7 @@ deb https://mirrors.ustc.edu.cn/proxmox/debian/ceph-quincy bookworm no-subscript
 6. 然后就可以愉快的更新软件源了
 
 # 二、修改 CT Templates (LXC 容器) 源
-1. 将 /usr/share/perl5/PVE/APLInfo.pm 文件中默认的源地址 http://download.proxmox.com替换为 https://mirrors.tuna.tsinghua.edu.cn/proxmox 即可
+1. 将 /usr/share/perl5/PVE/APLInfo.pm 文件中默认的源地址 http://download.proxmox.com 替换为 https://mirrors.tuna.tsinghua.edu.cn/proxmox 即可。
 ```
 cp /usr/share/perl5/PVE/APLInfo.pm /usr/share/perl5/PVE/APLInfo.pm_back
 sed -i 's|http://download.proxmox.com|https://mirrors.ustc.edu.cn/proxmox|g' /usr/share/perl5/PVE/APLInfo.pm
