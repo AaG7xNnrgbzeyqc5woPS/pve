@@ -1,7 +1,7 @@
-# PVE8修改软件仓库源和 CT模板（LXC）源为国内源
+# See：
 - [PVE8修改软件仓库源和 CT模板（LXC）源为国内源](https://www.dgpyy.com/archives/174/)
 
-# 替换 apt 软件源
+# 一、 替换 apt 软件源
 1. 更新证书
 ```
 sudo apt install apt-transport-https ca-certificates
@@ -35,7 +35,7 @@ deb https://mirrors.ustc.edu.cn/proxmox/debian/ceph-quincy bookworm no-subscript
 ```
 6. 然后就可以愉快的更新软件源了
 
-# 修改 CT Templates (LXC 容器) 源
+# 二、修改 CT Templates (LXC 容器) 源
 1. 将 /usr/share/perl5/PVE/APLInfo.pm 文件中默认的源地址 http://download.proxmox.com替换为 https://mirrors.tuna.tsinghua.edu.cn/proxmox 即可
 ```
 cp /usr/share/perl5/PVE/APLInfo.pm /usr/share/perl5/PVE/APLInfo.pm_back
