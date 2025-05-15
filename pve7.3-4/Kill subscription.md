@@ -21,3 +21,13 @@
 - e2) now, NO subscription notice at pve web GUI.
 
 # 2. Tesk OK!
+# 3. new keyword
+```
+Ext.Msg.show({
+                            title: gettext('No valid subscription'),
+                            icon: Ext.Msg.WARNING,
+                            message: Proxmox.Utils.getNoSubKeyHtml(res.data.url),
+                            buttons: Ext.Msg.OK,
+
+```
+```No valid subscription```
