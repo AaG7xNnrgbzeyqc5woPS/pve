@@ -1,5 +1,7 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
+# 总结：
+  动态获取ipv6,使用的方式一，编辑 `/etc/sysctl.conf。测试成功！需要重启整个电脑。
+  
 # pve 上如何启动 ipv6
 
 在Proxmox VE（PVE）上启动和配置IPv6，主要有以下几种方法，适用于动态获取和静态配置IPv6地址：
