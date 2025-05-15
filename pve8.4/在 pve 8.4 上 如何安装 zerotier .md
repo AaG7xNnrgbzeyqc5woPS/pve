@@ -1,5 +1,7 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
+# 概要
+  - 经过实验，zerotier非常容易就安装上了，比[官方文档](https://www.zerotier.com/download/#linux)好用
+  
 # 在 pve 8.4 上 zerotier 如何安装
 
 在 Proxmox VE 8.4（PVE 8.4）上安装 ZeroTier 的步骤如下：
