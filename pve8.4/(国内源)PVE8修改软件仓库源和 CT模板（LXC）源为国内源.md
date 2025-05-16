@@ -71,3 +71,7 @@ systemctl restart pvedaemon.service
         {
 ```
 注意这里的 host 属性是不能修改的，只改 url 就好
+
+# 五、TurnKey Linux 源
+- [中科大TurnKey Linux源帮助](https://mirrors.ustc.edu.cn/help/turnkeylinux.html)
+- 看了帮助，非常麻烦，暂时不需要就不实验了。
