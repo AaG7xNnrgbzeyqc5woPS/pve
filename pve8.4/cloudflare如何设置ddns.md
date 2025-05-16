@@ -13,3 +13,5 @@ Cloudflare 设置 DDNS（动态域名解析）主要通过调用其 DNS API 来�
 3. 总结：
    - 通过cloudflare 的 dns api 编辑子域名。
    - 注意：API Token 拥有这个域名的编辑权限。
+
+4，后续，pve 主机使用 软件 DDNS-GO 定时上传 变化后的ip地址
