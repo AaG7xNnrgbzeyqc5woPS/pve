@@ -1,10 +1,10 @@
 在Proxmox VE（PVE）中配置DDNS解析，尤其是针对动态IPv6地址，常用的方法是借助第三方DDNS客户端工具如DDNS-GO，配合阿里云、腾讯云等域名服务商实现动态域名解析。具体步骤如下：
 1. 安装必要工具
-    安装curl和net-tools（查看IP地址用）：
+安装curl和net-tools（查看IP地址用）：
 ```
     apt-get install curl dnsutils net-tools -y
 ```
-    使用ifconfig或ip a查看当前IPv6地址。
+使用ifconfig或ip a查看当前IPv6地址。
 
 2. 下载并安装DDNS-GO
     创建目录并进入：
@@ -40,7 +40,8 @@ tar -zxvf ddns-go_5.6.6_linux_x86_64.tar.gz
     echo "net.ipv6.conf.vmbr0.autoconf=1" >> /etc/sysctl.conf
     sysctl -p
 ```
-    重启PVE后确认IPv6地址生效。
+
+重启PVE后确认IPv6地址生效。
 
 5. 其他注意事项
     确保域名服务商支持API动态更新DNS记录（阿里云、腾讯云、Cloudflare等均支持）。
