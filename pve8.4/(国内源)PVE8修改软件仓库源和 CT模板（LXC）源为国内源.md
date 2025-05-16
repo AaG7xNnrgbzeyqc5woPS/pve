@@ -1,5 +1,6 @@
 # See：
 - [PVE8修改软件仓库源和 CT模板（LXC）源为国内源](https://www.dgpyy.com/archives/174/)
+- [Proxmox VE 8 换源 ](https://blog.fallenbreath.me/zh-CN/2023/pve8-change-sourceslist/)
 
 # 一、 替换 apt 软件源
 1. 更新证书
@@ -46,3 +47,26 @@ sed -i 's|http://download.proxmox.com|https://mirrors.ustc.edu.cn/proxmox|g' /us
 systemctl restart pvedaemon.service
 ```
 之后在 pve 网页端下载 CT Templates 速度就很快了。
+
+# 三、实验
+- 1. 替换 apt 源都成功了。包括：通用源，pve源，ceph源
+- 2. 修改 CT Templates (LXC 容器) 源第一次失败，经过研究后成功。需要注意以下两点
+- 3. 手动修改时候， host 属性是不能修改的，只改 url
+- 4. 需要整个服务器重启才行，只是 ```systemctl restart pvedaemon.service```不够的。
+
+
+# 四、APLInfo.pm具体变更的内容如下所示
+```
+--- a/usr/share/perl5/PVE/APLInfo.pm.bak
++++ b/usr/share/perl5/PVE/APLInfo.pm
+@@ -197,7 +197,7 @@ sub get_apl_sources {
+     my $sources = [
+        {
+            host => "download.proxmox.com",
+-           url => "http://download.proxmox.com/images",
++           url => "https://mirrors.ustc.edu.cn/proxmox/images",
+            file => 'aplinfo-pve-8.dat',
+        },
+        {
+```
+注意这里的 host 属性是不能修改的，只改 url 就好
