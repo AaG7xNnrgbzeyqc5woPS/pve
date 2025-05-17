@@ -1,9 +1,11 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-# 测试：
+
+# 使用以下的命令测试：
 ```
  ip -4 a
+ ip link show
 ```
-可以看到 zerotier 接口
+可以看到 zerotier 接口, ip地址
 
 # pve 的容器内如何安装zerotier
 
