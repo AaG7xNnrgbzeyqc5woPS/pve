@@ -6,7 +6,7 @@
 
 ## 1. ❤️容器类型和配置准备
 
-- 建议使用***非特权（unprivileged）***LXC 容器，且模板选择 Debian 11（bullseye）等主流 Linux 发行版，网卡名称最好保持为 `eth0`，方便后续配置[^4]。
+- 建议使用 **非特权（unprivileged）** LXC 容器，且模板选择 Debian 11（bullseye）等主流 Linux 发行版，网卡名称最好保持为 `eth0`，方便后续配置[^4]。
 - 由于 ZeroTier 需要访问 TUN 设备，必须确保宿主机和容器配置支持 `/dev/net/tun` 设备。
 - 在 PVE 宿主机上，编辑容器配置文件 `/etc/pve/lxc/<容器ID>.conf`，添加允许访问 TUN 设备的权限，例如（PVE 7.0及以上版本）：
 
@@ -24,6 +24,11 @@ sysctl -w net.ipv6.conf.all.forwarding=1
 ```
 
 并将其写入 `/etc/sysctl.conf` 以持久化[^4]。
+```
+nano /etc/sysctl.conf 最后添加下面两行
+net.ipv4.ip_forward=1
+net.ipv6.conf.all.forwarding=1
+```
 
 
 ## 2. 容器内安装 ZeroTier
