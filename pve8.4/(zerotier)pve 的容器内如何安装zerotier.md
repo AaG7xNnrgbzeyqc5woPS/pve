@@ -1,4 +1,9 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
+# 测试：
+```
+ ip -4 a
+```
+可以看到 zerotier 接口
 
 # pve 的容器内如何安装zerotier
 
@@ -25,7 +30,7 @@ sysctl -w net.ipv6.conf.all.forwarding=1
 
 并将其写入 `/etc/sysctl.conf` 以持久化[^4]。
 ```
-nano /etc/sysctl.conf 最后添加下面两行
+nano /etc/sysctl.conf 最后添加下面两行：
 net.ipv4.ip_forward=1
 net.ipv6.conf.all.forwarding=1
 ```
