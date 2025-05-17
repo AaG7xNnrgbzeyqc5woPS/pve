@@ -27,7 +27,8 @@ curl -s https://install.zerotier.com/ | bash
 *** Success! You are ZeroTier address [ xxxxxxxx ].
 ```
 
-这里的地址类似于设备的唯一标识。
+这里的地址类似于设备的唯一标识。  
+
 3. **启动并设置开机自启**
 启动 ZeroTier 服务：
 
