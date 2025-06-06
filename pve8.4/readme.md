@@ -20,5 +20,5 @@ smartctl -a /dev/sdb
 ```
 To abort the test (if absolutely necessary), use:
 ```
-smartctl -X /dev/sda
+smartctl -X /dev/sdb
 ```
