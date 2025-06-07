@@ -1,6 +1,8 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
-# root@pve2:~\# cat /sys/module/zfs/parameters/zfs_arc_max
+# 
+```
+root@pve2:~\# cat /sys/module/zfs/parameters/zfs_arc_max
 
 6442450944
 root@pve2:~\# cat /sys/module/zfs/parameters/zfs_arc_min
@@ -8,7 +10,7 @@ root@pve2:~\# cat /sys/module/zfs/parameters/zfs_arc_min
 root@pve2:~\# grep -r zfs_arc_max /etc/modprobe.d/
 /etc/modprobe.d/zfs.conf:options zfs zfs_arc_max=6442450944
 root@pve2:~\#
-
+```
 根据你提供的信息：
 
 - `/sys/module/zfs/parameters/zfs_arc_max` 显示为 `6442450944`（约6GB）
