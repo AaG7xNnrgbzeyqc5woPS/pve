@@ -1,6 +1,6 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
-# 我有16G的内存，hdd硬盘上的zfs 系统大小是 4T，我使用pve,如何
+# 我有16G的内存，hdd硬盘上的zfs 系统大小是 4T，我使用pve,如何设置 arc
 
 你有16GB内存，4TB的HDD上运行ZFS存储池，并使用Proxmox VE（PVE），建议你这样设置ZFS ARC缓存大小以平衡性能和内存占用：
 
