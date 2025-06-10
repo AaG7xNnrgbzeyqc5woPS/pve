@@ -30,3 +30,20 @@ Ext.Msg.show({
 
 ```
 ❤️```No valid subscription``` at lines 568 of  proxmoxlib.js in pve 8.4 -- 2025-5-15
+
+# 3.❤️ 跳过 checked_command 函数
+- 备份 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js 文件
+- 根据关键字 ```'No valid subscription'``` 找到   checked_command: function(orig_cmd)  函数
+- 使用多行注释符 ```/*   */``` 注释掉该函数
+- 重新编写一个新函数如下：
+  ```
+   // fixed by John 2025-6-10
+   checked_command: function(orig_cmd) {
+        orig_cmd();
+   },
+
+  ```
+  - 保存文件proxmoxlib.js
+  - clear browser cookie and cache
+  - now, NO subscription notice at pve web GUI.
+  -  2025-6-10， pve 8.4.1 TEST OK!
