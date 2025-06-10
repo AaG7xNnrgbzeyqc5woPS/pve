@@ -2,6 +2,7 @@
 - [PVE8修改软件仓库源和 CT模板（LXC）源为国内源](https://www.dgpyy.com/archives/174/)
 - [Proxmox VE 8 换源 ](https://blog.fallenbreath.me/zh-CN/2023/pve8-change-sourceslist/)
 - [中科大TurnKey Linux源](https://mirrors.ustc.edu.cn/help/turnkeylinux.html)
+- ❤️[TurnKey Linux](https://mirrors.ustc.edu.cn/help/turnkeylinux.html)
 
 # 一、 替换 apt 软件源
 1. 更新证书
