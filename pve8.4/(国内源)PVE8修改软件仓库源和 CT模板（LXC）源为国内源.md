@@ -75,5 +75,5 @@ systemctl restart pvedaemon.service
 
 # 五、TurnKey Linux 源
 - [中科大TurnKey Linux源帮助](https://mirrors.ustc.edu.cn/help/turnkeylinux.html)
-- 看了帮助，非常麻烦，暂时不需要就不实验了。
-- [PVE更换其他turnkeylinux源](http://zkeeer.space/?p=1020),这个方法比较简单，可以试试。经过测试，这个方案不行。
+- 2025-6-10 根据帮助，在全新的 pve 8.4.1 更换成功，下载速度极快！
+- ❤️诀窍：无脑跟随指南操作！
