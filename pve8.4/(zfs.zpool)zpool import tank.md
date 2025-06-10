@@ -1,7 +1,7 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
 # root@pve2:~\# zpool create tank mirror
-
+```
 invalid vdev specification: mirror requires at least 2 devices
 root@pve2:~\# lsblk
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
@@ -30,7 +30,7 @@ cannot open '/dev/sda1': invalid character '/' in pool name
 root@pve2:~\# zpool online tank /dev/sda1 /dev/sdb1
 cannot open 'tank': no such pool
 root@pve2:~\#
-
+```
 The errors and issues you are encountering when trying to create or manage the ZFS pool "tank" stem from the fact that the devices (/dev/sda1 and /dev/sdb1) are already part of an existing or potentially active pool named "tank." This prevents you from creating a new pool with the same devices or bringing them online in a new pool without first properly handling the existing pool configuration.
 
 ### Explanation of the errors:
