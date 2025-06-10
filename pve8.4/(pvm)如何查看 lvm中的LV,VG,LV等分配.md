@@ -1,6 +1,6 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
-# 如何查看 pvm中的LV,VG,LV等分配
+# 如何查看 lvm中的LV,VG,LV等分配
 
 在Linux系统中，查看LVM（逻辑卷管理器）中PV（物理卷）、VG（卷组）、LV（逻辑卷）的分配情况，可以使用以下命令：
 
