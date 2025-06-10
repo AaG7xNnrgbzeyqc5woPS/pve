@@ -1,7 +1,8 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
-# root@pve2:~\# zpool create tank mirror
+# zpool create tank mirror
 ```
+# zpool create tank mirror
 invalid vdev specification: mirror requires at least 2 devices
 root@pve2:~\# lsblk
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
