@@ -24,6 +24,11 @@ tar -zxvf ddns-go_5.6.6_linux_x86_64.tar.gz
 ```
 启动后通过浏览器访问PVE管理IP:9876进入DDNS-GO管理界面 。
 
+# 2.1 最新下载地址 2025-6-12
+```
+wget -c https://github.com/jeessy2/ddns-go/releases/download/v6.10.0/ddns-go_6.10.0_linux_x86_64.tar.gz
+```
+
 # 3. 配置DDNS-GO
     在DDNS-GO界面填写域名服务商的API密钥（如阿里云AK/SK、腾讯云API等）。
     配置要更新的域名和对应的AAAA（IPv6）记录。
